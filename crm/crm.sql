@@ -17,14 +17,19 @@ CREATE TABLE activities (
     activity_type TEXT,
     notes TEXT,
     date_time TEXT,
+    contact_id INTEGER
 );
 
 CREATE TABLE companies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    
+    name TEXT,
+
 );
 
 CREATE TABLE internals (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    
+    first_name TEXT,
+    last_name TEXT,
+    email TEXT,
+    company_id INTEGER
 );
